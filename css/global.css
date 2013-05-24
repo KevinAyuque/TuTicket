@@ -318,6 +318,7 @@ a:hover{
 #tabla_principal{
 	width:auto;
 	background-color:#EEEEEE;
+	padding-bottom:5px;
 }
 
 #tabla_principal nav{
@@ -347,7 +348,6 @@ a:hover{
 
 .cuadro{
 	position:relative;
-	padding-bottom:5px;
 	margin-bottom:10px;
 }
 
