@@ -1,0 +1,21 @@
+<?php
+	$nombre=$_COOKIE['nombre'];
+	$apellido=$_COOKIE['apellido'];
+	$genero=$_COOKIE['genero'];
+	$direccion=$_COOKIE['direccion'];
+	$correo=$_COOKIE['correo'];
+	$dni=$_COOKIE['dni'];
+	$usuario=$_COOKIE['usuario'];
+	/*funcionregistrarenbasededatos($nombre,$apellido,$genero,$direccion,$correo,$dni,$usuario)*/
+	setcookie("usuario",a,time()-3);
+	setcookie("nombre",a,time()-3);
+	setcookie("apellido",a,time()-3);
+	setcookie("dni",a,time()-3);
+	setcookie("correo",a,time()-3);
+	setcookie("direccion",a,time()-3);
+	setcookie("genero",a,time()-3);
+	setcookie("fecha",a,time()-3);
+	header('Location:mi_cuenta.php');
+	exit();
+	
+?>

@@ -1,12 +1,23 @@
 <?PHP
+	date_default_timezone_set ('america/lima');
 	$dia=array('Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo');
 	$mes=array('Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
 	$año=date('Y');
 	$fecha = date('d');
 	$numDia = date('N');
 	$numMes = date('n');
-	$fechaCompleta=$dia[$numDia-1] . ", " . $numDia . " de " . $mes[$numMes-1]  . " del " . $año;
-?>
+	$fechaCompleta=$dia[$numDia-1] . " , " . $fecha . " de " . $mes[$numMes-1]  . " del " . $año;	
+	if(isset($_SESSION['usuario']))
+	{
+		$micuenta=$_SESSION['usuario'];
+		$pagina="carrito.php";
+	}
+	else
+	{
+		$micuenta="Login";
+		$pagina="mi_cuenta.php";
+	}
+	?>
 <div id="container">
 	<header id="cabecera">
 		<h1>
@@ -18,9 +29,9 @@
 			<p><?php echo $fechaCompleta ?></p>
 		</div>
 		<nav id="nav_busqueda">
-			<a href="busqueda_avanzada.php">B&uacutesqueda avanzada</a> | 
-			<a href="mi_cuenta.php">Mi cuenta</a> |
-			<a href="carrito.php">Carrito de Compras</a>
+			<a href="busqueda_avanzada.php">B&uacutesqueda avanzada</a> |
+			<a href="mi_cuenta.php"><?php echo $micuenta ?></a>
+			<a href="<?php echo $pagina ?>" >| 0 <img style="padding:0px; margin:0px;position:relative; right:0px;bottom:0px; "src="img/carrito.png" ></a> 
 		</nav>
 		<div id="barra_principal">
 			<nav id="nav_principal">

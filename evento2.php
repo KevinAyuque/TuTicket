@@ -1,3 +1,6 @@
+<?php
+	include 'validar_recordar.php';
+?>
 <!doctype html>
 <html>
 <head>

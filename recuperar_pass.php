@@ -1,3 +1,6 @@
+<?php
+	include 'validar_recordar.php';
+?>
 <!doctype html>
 <html>
 <head>
@@ -12,7 +15,7 @@
 	?>
 	<div id="recup_pass">
 					<h1>Porfavor introduzca el usuario y el correo con el que se registr&oacute;</h1>
-					<form>
+					<form action="enviar_pass.php" method="post">
 						<table id="pass">
 							<tr>
 								<td>Usuario:</td>
@@ -27,6 +30,23 @@
 								<td><input type="submit" value="Enviar"><input type="reset" value="Borrar"></td>
 							</tr>
 						</table>
+						<?php if(isset($_GET['error']) && $_GET['error']==1)
+										{ ?>
+											<p style="color:red"> "Porfavor, complete los campos"</p>
+										<?php
+										}
+							if(isset($_GET['conf']) && $_GET['conf']==1)
+										{ ?>
+											<p style="color:red"> "La contrase&ntilde;a ha sido enviada a su correo, Gracias."</p>
+										<?php
+										}
+							if(isset($_GET['conf']) && $_GET['conf']==2)
+										{ ?>
+											<p style="color:red"> "La contrase&ntilde;a no ha podido ser enviada, Int&eatilde;ntelo de nuevo"</p>
+										<?php
+										}
+								
+						?>
 					</form>
 				</div>
 

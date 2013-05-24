@@ -65,6 +65,8 @@ a:hover{
 }
 #nav_busqueda a, #nav_busqueda a:visited{
 	color:white;
+	position:relative;
+
 }
 #nav_busqueda a:hover{
 }
@@ -281,19 +283,37 @@ a:hover{
 #redes_sociales p{
 	margin:0px;
 	padding:0px;
-	font-size:14px;
-	font-style:italic;
+	font-size:15px;
 	display:inline;
 }
 
-#slide_principal{
-	margin:0px;
-	background-color:black;
-	width:auto;
-	height:300px;
-	margin-bottom:10px;
+#redes_sociales nav{
+	display:inline;
 	
 }
+
+#slideshowHolder{
+	
+}
+
+#slideinfo{
+	padding:5px;
+	height:25px;
+	width:550px;
+
+}
+
+#slideinfo h4{
+	color: white;
+	margin: 2px;
+
+}
+
+#slideinfo p{
+	color:white;
+	font-weight:bold;
+}
+
 
 #tabla_principal{
 	width:auto;
@@ -310,7 +330,11 @@ a:hover{
 	font-size:13px;
 }
 #tabla_principal nav a, #tabla_principal nav a:visited{
+	cursor:pointer;
 	color:#E18A07;
+}
+
+.tablalinkseleccionado{
 	font-weight:bold;
 }
 
@@ -322,25 +346,25 @@ a:hover{
 }
 
 .cuadro{
-	border:solid silver 1px;
+	position:relative;
 	margin-bottom:10px;
 }
 
-#recien_anadido{
+.ocultarTabla{
 	display:none;
 }
 
 #fecha
 {
 	position:absolute;
-
 	top:0px;
 	right:10px;
-	color:silver;
+	color:white;
 }
 #fecha p
 {
 	font-size:13px;
+	color:white;
 }
 
 .cuadrado{
@@ -361,4 +385,13 @@ a:hover{
 	padding:15px 0 15px 0;
 	text-align:center;
 	font-size:19px;
+	height:150px;
+}
+#img_llamenos
+{
+	position:relative;
+	width:150px; 
+	height:100px; 
+	border:1px solid black;
+	margin-left:25px;
 }

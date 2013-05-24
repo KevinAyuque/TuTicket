@@ -1,23 +1,58 @@
 #form_registrar
 {
-	position:absolute;
-	border:1px solid black;
+	margin:auto;
 	width:400px;
 	height:480px;
 	padding:10px;
-	margin-top:0px;
-	margin-left:0px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
-#form_registrar h1
-{
-	font-size:25px;
-	margin-top:0px;
-}
+
 #form_registrar table
 {
-	position:absolute;
-	border:1px solid black;
+
+	margin-top:-5px;
 	width:400px;
-	height:430px;
+	height:440px;
 	padding:10px;
+	font-size:16px;
+	font-family:cambria, arial, times new romans;
+}
+
+table button{
+	-webkit-appearance:none;
+	border-radius:none;
+	background-color:white;
+	border:solid gray 1px;
+	color:black;
+	padding:10px;
+	font-size:17px;
+	font-family:arial, verdana, sans-serif;
+	cursor:pointer;
+}
+
+table button:hover{
+	background-color:#009999;
+	color:white;
+}
+
+table select, table input, table textarea{
+	font-size:16px;
+	border:solid gray 1px;
+	background-color:white;
+	border-radius:0px;
+	font-family:arial,verdana,sans serif;
+	padding:5px;
+
+	resize:none;
+}
+
+table select{
+	-webkit-appearance: none;
+	background-image:url(../img/drop.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+	font-size:12px;
+	padding-right:35px;
+	width:auto;
 }

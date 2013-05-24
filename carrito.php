@@ -1,3 +1,16 @@
+<?php
+	include 'validar_recordar.php';
+	if(isset($_SESSION['usuario']))
+	{
+		$displayR="none";
+		$top="-400px";
+	}
+	else
+	{
+		header('Location:mi:mi_cuenta.php');
+		exit();
+	}
+?>
 <!doctype html>
 <html>
 <head>
@@ -10,8 +23,8 @@
 	<?php
 	include 'cabecera.php';
 	?>
-	<div id="tabla_compras">
-			<h1>Carrito de Compras</h1>
+	<h1>Carrito de Compras</h1>
+	<div id="tabla_compras" style="display:<?php if(!isset($_SESSION['usuario'])){echo 'none';} else{ echo 'block';?> margin-top:<?php echo $top; }?>">
 			<table>
 				<tr>
 					<th>Evento</th>
@@ -33,29 +46,6 @@
 				</tr>
 			</table>
 		</div>
-		<div id="form_ingresar">
-			<h1>Ingresa a tu cuenta</h1>
-			<form>
-				<table>
-					<tr>
-						<td><label for="usuario">Usuario</label></td>
-						<td><input type="text"name="usuario" /></td>
-					</tr>
-					<tr>
-						<td><label for="password">Password</label></td>
-						<td><input type="password" name="password" /></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><input type="submit" value="Ingresar" />
-						<input type="reset" value="Borrar" /></td>
-					</tr>
-				</table>
-				<p><a href="registrarse.php">&iquest; No tienes cuenta &#63;. Reg&iacute;strate</a><br/>
-				<a href="recuperar_pass.php">&iquest;Olvidaste tu contrase&ntilde;a &#63;</a></p>
-			</form>
-		</div>	
-
 	<?php
 		include 'pie_pagina.php';
 	?>

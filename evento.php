@@ -39,8 +39,8 @@
 		<a href="#">Viernes 30 de febrero del 2013</a></br>
 		<a href="#">Domingo 1 de agosto del 2078</a></br>
 		<strong>Descripci&oacute;n:</strong>
-		<p>asdadasdasasasasasasasasasasasasasasasassdadasda
-		xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+		<p>Grandes y reconocidos m&uacute;sicos y grupos de rock en espanol presentes.
+		Vive junto con nosotros del mejor repertorio nacional</p>
 	</div>
 	<div id="evento_links">
 		Links:</br>

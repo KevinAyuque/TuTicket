@@ -2,25 +2,74 @@
 {
 	position:relative;
 	width:400px;
-	height:430px;
-	border:1px solid black;
-	margin-top:0px;
-	margin-left:0px;
+	margin:auto;
+	margin-top:50px;
+	margin-bottom:50px;
 	padding:20px;
+	background-color:#F5F5F5;
+	box-shadow:0px 0px 5px gray;
+	border-radius:10px;
 }
-#contacto table 
+ table 
 {
-	position:absolute;
+	position:relative;
 	margin-top:0px;
 	padding:5px;
-}
-#contacto table 
-{
-	font-size:19px;
+	font-size:16px;
+	font-family:cambria, arial, times new romans;
 	border-spacing:20px;
 }
-#contacto h1
+table tr td{
+
+}
+
+table select, table input, table textarea{
+	font-size:16px;
+	border:solid gray 1px;
+	background-color:white;
+	border-radius:0px;
+	font-family:arial,verdana,sans serif;
+	padding:5px;
+	width:100%;
+	-webkit-appearance: none;
+	resize:none;
+}
+
+table input{
+	width:250px;
+}
+
+table select{
+	background-image:url(../img/drop.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+
+table button{
+	-webkit-appearance:none;
+	border-radius:none;
+	background-color:white;
+	border:solid gray 1px;
+	color:black;
+	padding:10px;
+	font-size:17px;
+	font-family:arial, verdana, sans-serif;
+	cursor:pointer;
+}
+
+table button:hover{
+	background-color:#009999;
+	color:white;
+}
+
+#busqueda_avanzada
 {
-	margin-top:0px;
-	font-size:26px;
+	position:relative;
+	width:400px;
+	height:430px;
+	margin-top:40px;
+	margin-bottom:40px;
+	margin:auto;
+	padding:20px;
 }

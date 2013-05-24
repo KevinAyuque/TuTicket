@@ -6,19 +6,28 @@
 			
 				<div id="columna_derecha">
 					<div id="redes_sociales" class="cuadro">
-						<p>S&iacuteguenos en: </p>
+						<p>S&iacuteguenos: </p>
 						<nav>
-							<a href="http://facebook.com"><img src="img/icon_facebook.jpg" alt="Facebook"></a>
-							<a href="http://twitter.com"><img src="img/icon_twitter.jpg" alt="Twitter"></a>
-							<a href="http://google.com"><img src="img/icon_google.jpg" alt="Google+"></a>
+							<a href="http://facebook.com" target="_blank"><img src="img/icon_facebook.jpg" alt="Facebook"></a>
+							<a href="http://twitter.com" target="_blank"><img src="img/icon_twitter.jpg" alt="Twitter"></a>
+							<a href="http://google.com" target="_blank"><img src="img/icon_google.jpg" alt="Google+"></a>
 						</nav>
 					</div>
 					
-					<div id="llamenos" class="cuadro">
-						Ll&aacute;menos al <br>+511-111-1111
+					<div id="tarjetas" class="cuadro">
+						<div id="tarjetas2">
+							<img style="margin: 0 0 0 28px; border:solid silver 1px;" src="img/tarjeta_visa.jpg" alt="VISA">
+							<img style="margin: 0px 0 0px 28px; border:solid silver 1px;" src="img/tarjeta_mc.jpg" alt="MASTER CARD">
+							<img style="margin: 0px 0 0px 28px; border:solid silver 1px;" src="img/tarjeta_paypal.jpg" alt="PAYPAL">
+						</div>
 					</div>
-					<div class="cuadro">
-						Publicidad 1
+					
+					<div id="llamenos" class="cuadro">
+						<div id="img_llamenos">	
+							<img src="img/llamenos_img.jpg" alt="LLamenos" />
+						</div>
+						Ll&aacute;menos al <br>+511-345-7821
+						
 					</div>
 				</div>
 		<?php }

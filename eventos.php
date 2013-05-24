@@ -1,4 +1,5 @@
 <?php
+	include 'validar_recordar.php';
 	$search_s=false;
 	if(isset($_GET['search'])){
 		$search_s=true;
@@ -25,6 +26,7 @@
 	<?php
 	include 'cabecera.php';
 	?>
+	
 	
 	<?php
 	if($search_s==true){?>

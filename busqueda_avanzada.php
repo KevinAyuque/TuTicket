@@ -1,10 +1,22 @@
+<?php 
+include 'validar_recordar.php';
+?>
 <!doctype html>
 <html>
 <head>
-	<title>TuTicket | Cont&aacutectenos</title>
+	<title>TuTicket | B&uacute;squeda Avanzada</title>
 	<link rel="Shortcut Icon" href="favicon.ico"/>
 	<link href="css/global.css" rel="stylesheet" type"text/css">
 	<link href="css/contactenos.css" rel="stylesheet" type"text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+				$("#categoria").change(function(){
+						var op = $(this).find("option:selected").val();
+						$("#a1").text(op);
+				});
+		});
+	</script>
 </head>
 <body>
 	<?php
@@ -12,7 +24,7 @@
 	?>
 	
 	<h1>B&uacutesqueda Avanzada</h1>
-	<div id="contacto">
+	<div id="busqueda_avanzada">
 					<form action="eventos.php" method="get">
 						<table>
 							<tr>
@@ -22,13 +34,13 @@
 							<tr>
 								<td>Categor&iacutea </td>
 								<td>
-								<select>
-									<option value="seleccione">Seleccione</option>
-									<option value="01">Musica</option>
-									<option value="01">Deportes</option>
-									<option value="01">Teatro</option>
-									<option value="01">Familia</option>
-									<option value="01">Cultura</option>
+								<select id="categoria">
+									<option value="seleccione">Escoger</option>
+									<option value="musica">Musica</option>
+									<option value="deportes">Deportes</option>
+									<option value="teatro">Teatro</option>
+									<option value="familia">Familia</option>
+									<option value="cultura">Cultura</option>
 								</select>
 								</td>
 							</tr>
@@ -36,19 +48,19 @@
 								<td>Sub-Categor&iacutea </td>
 								<td>
 								<select>
-									<option value="seleccione">Seleccione</option>
-									<option value="01">Rock</option>
-									<option value="01">Latin</option>
-									<option value="01">Salsa</option>
-									<option value="01">Pop</option>
-									<option value="01">Electro</option>
+									<option value="seleccione">Escoger</option>
+									<option value="01"><div id="a1"></div></option>
+									<option value="01"><div id="a2"></div></option>
+									<option value="01"><div id="a3"></div></option>
+									<option value="01"><div id="a4"></div></option>
+									<option value="01"><div id="a5"></div></option>
 								</select>
 							</tr>
 							<tr>
 								<td>Local</td>
 								<td>
 								<select>
-									<option value="seleccione">Seleccione</option>
+									<option value="seleccione">Escoger</option>
 									<option value="01">Teatro Nacional</option>
 									<option value="02">Estadio Nacional</option>
 									<option value="03">Jockey Club del Per&uacute</option>
@@ -58,7 +70,7 @@
 								<td>Ciudad</td>
 								<td>
 								<select>
-									<option value="seleccione">Seleccione</option>
+									<option value="seleccione">Escoger</option>
 									<option value="01">Lima</option>
 									<option value="02">Ancash</option>
 									<option value="03">Apurimac</option>
@@ -89,7 +101,7 @@
 							</tr>
 							<tr>
 								<td></td>
-								<td><input type="submit" value="Buscar" /></td>
+								<td><button type="submit">B&uacute;squeda avanzada</button></td>
 							</tr>
 						</table>	
 					</form>

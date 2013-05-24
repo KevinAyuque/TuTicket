@@ -1,3 +1,6 @@
+<?php
+	include 'validar_recordar.php';
+?>
 <!doctype html>
 <html>
 <head>
@@ -14,12 +17,17 @@
 	<h1>Mapa del Sitio</h1>
 	<div id="mapa_sitio1">
 					<ul>
-						<li><a href="">Inicio</a></li>
-						<li><a href="">Eventos</a></li>
-							
-						<li><a href="">Cont&aacute;ctenos</a></li>
-						<li><a href="">Preguntas Frecuentes</a></li>
-						<li><a href="">Mapa del Sitio</a></li>
+						<h2>General</h2>
+						<li><a href="index.php">Inicio</a></li>
+						<li><a href="evento.php">Eventos</a></li>	
+						<li><a href="contactenos.php">Cont&aacute;ctenos</a></li>
+						<li><a href="preguntas_frecuentes.php">Preguntas Frecuentes</a></li>
+						<li><a href="busqueda_avanzada.php">B&uacute;squeda avanzada</a></li>
+						<li><a href="mapa_sitio.php">Mapa del Sitio</a></li>
+						
+						<h2>Usuario</h2>
+						<li><a href="mi_cuenta.php">Mi Cuenta</a></li>
+						<li><a href="carrito.php">Carrito de Compras</a></li>	
 					</ul>
 				</div>
 	<?php
